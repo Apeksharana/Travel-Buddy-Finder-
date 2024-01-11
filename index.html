@@ -1,0 +1,171 @@
+<html>
+<head>
+    <title>Sidekick</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-image: url(back.jpeg);">
+
+<!--Navigation-->  
+<div class="nav">
+    <img src="logo.png" width="300" height="40">
+    <button class="lgbtn" onclick="openForm()"> Login</button>
+</div>      
+
+<!--button popup form-->
+    <div class="bgimage">
+       <div class="font">
+           <center class="center">
+            <h1>Find your buddy to travel</h1><p><i>Find your trips that meets your interest and explore the world with your buddy</i></p>
+            <button class="open-button" onclick="openForm()">FIND BUDDY</button> 
+           </center>
+        </div>
+    </div>
+<div id="myForm" class="form-popup">
+    <form action="user.php" method="post" class="form-container">
+            <center class="head"><h1>LOGIN</h1></center>
+                <label for="email">Email</label>
+                <input type=email name=email placeholder="Enter your email" required><br>
+                <label for="pswd">Password </label>
+                <input type= password name= pswd placeholder="Enter password"  required>
+                <center> <button class="btn" onclick="openForm()">Login</button><center>
+                 <center><pre style="font-size: smaller;">or<br> <b >To create account</b></pre></center>
+    </form>
+    <form method="post" action="signup.html">
+            <center> <button class="btn">Sign up</button></center>
+    </form>
+    
+    <center><button class="btn" onclick="closeForm()">Exit</button></center>
+</div>
+<script type="text/javascript">
+function openForm() {
+             document.getElementById("myForm").style.display = "block";
+        }
+function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+</script>
+<br><br>
+
+<!--content-->
+<div>
+    <h1 class="font1"><center>TRAVEL COMPANIONS AND THEIR PLANS</center></h1>
+    <br>
+    <p><center>These members are planning a trip and looking for a travel partner.
+        <br>Get in touch a start discussing your plans.</center></p>
+        <br><br><br><br><br>
+</div>
+<div class="box">
+    <div class="mySlides">
+    <center><h4>Group-Travel to Goa<br><br></h4>
+        <img src="goa.jpeg" height="150"></center>
+        <br><br>
+        <table>
+            <tr>
+                <td><b>Duration: </b></td>
+                <td>2 weeks</td>
+            </tr>
+            <tr>
+                <td><b>Date: </b></td>
+                <td>25 November 2023</td>
+            </tr>
+            <tr>
+                <td><b>Budget: </b></td>
+                <td>4000 Rs</td>
+            </tr>
+            <tr>
+                <td><b>Type of journey: </b></td>
+                <td>Beach</td>
+            </tr>
+        </table><br><br>
+<center><a href="view1.html" class="l"> Views Details</a></center>
+    </div>
+    <!-- <div class="mySlides">
+        <center><h4>Group-Travel to Goa<br><br></h4>
+            <img src="goa.jpeg" height="150"></center>
+            <br><br>
+            <table>
+                <tr>
+                    <td><b>Duration: </b></td>
+                    <td>2 weeks</td>
+                </tr>
+                <tr>
+                    <td><b>Date: </b></td>
+                    <td>25 November 2023</td>
+                </tr>
+                <tr>
+                    <td><b>Budget: </b></td>
+                    <td>4000 Rs</td>
+                </tr>
+                <tr>
+                    <td><b>Type of journey: </b></td>
+                    <td>Beach</td>
+                </tr>
+            </table><br><br>
+    <center><a href="view1.html" class="l"> Views Details</a></center>
+        </div> -->
+</div>
+<center><button class="button" onclick="openForm()" style="margin-top:5%"> Browse Trips</button></center>
+<br><br>
+<div class="back">
+    <center>
+    <img src="pic1.jpeg" width="150" height="150" class="side" style="border-radius: 50%;">
+    <img src="pic2.jpeg" width="100" height="100" class="side" style="border-radius: 50%;">
+    <img src="pic5.jpeg" width="150" height="150" class="side" style="border-radius: 50%;">
+    <img src="pic3.jpeg" width="100" height="100" class="side" style="border-radius: 50%;">
+    <img src="pic4.jpeg" width="150" height="150" class="side" style="border-radius: 50%;">
+    </center>
+    <br><br>
+    <center><h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Find your buddy and the world together <br>by using our website </h3></center><br><br>
+</div>
+
+<div class="top" >
+    <center><h1 class="font1">HOW IT WORKS</h1>Create a trip and invite people to join you or join an existing trip.<br> Finding a travel buddy online has never been easier. </center>
+        <div class="top">
+            <img src="con1.png" width="100" height="100" style="margin-left: 20%;">
+            <div style="margin-left:20%;">
+                <h3 class="font1"><b>Create a Trip</b></h3>
+                Create a trip and wait for someone<br> to join up or find an existing one that<br> you like the most.
+            </div>
+        </div>
+        <div  align="right">
+            <img src="con2.png" width="100" height="100" style="margin-right: 20%;">
+            <div style="margin-right:20%;">
+                <h3 class="font1"><b>Invite Travelers</b></h3>
+                Let travelers know about your plans by <br> inviting them to your trip.You can always<br> wait for someone to join up
+            </div>
+        </div>
+        <div>
+            <img src="con3.png" width="100" height="100" style="margin-left:20%;">
+            <div style="margin-left:20%;">
+                <h3 class="font1"><b>Find a Travel <br>Companion</b></h3>
+                Approve travel buddies you like and <br>start planning your trip together
+            </div>
+        </div>
+</div>
+
+<!--footer-->
+<div style="margin-top: 40;">
+    <div class="foot">
+        <center>
+        <img src="logo.png" width="200" style="margin-top:4%;"><br><br>
+        <b>SideKick is a platform where you can find your buddy with same interest<br>and gives you a platform to organize your own trip and trvel together.</b><br>
+            <a href="https://www.facebook.com/"><img src="flogo.png" class="isize" ></a>
+            <a href="https://www.instagram.com/"><img src="ilogo.png" class="isize"></a>
+            <a href="https://www.pinterest.com/"><img src="plogo.jpg" class="isize"></a>
+            <a href="https://www.twitter.com/"><img src="xlogo.png" class="isize"></a>
+            <div style="margin-top:20;">
+            <p>
+                <a href="#" class="link">Home</a>
+                <a href="#" class="link">About Us</a>
+                <a href="#" class="link">Contact</a>
+                <a href="#" class="link">Feedback</a>
+            </p>
+            </div>
+        </center>
+        <div class="footer-bottom">
+            <p>Copyright&copy;2023 <a href="#">SideKick</a></p>
+        </div>
+    </div>
+</div> 
+</body>
